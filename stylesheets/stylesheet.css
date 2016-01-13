@@ -7,7 +7,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  background-image: linear-gradient(180deg, #051C57, #004706); }
 
 a {
   color: #1e6bb8;
@@ -56,12 +56,11 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-image: linear-gradient(120deg, rgb(3, 28, 58), rgb(3, 24, 49)); }
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 5rem 6rem; } }
+    padding: 1rem 1rem 1rem 1rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
@@ -114,7 +113,8 @@ a {
   font-weight: normal;
   color: #159957; }
 .main-content p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  color: #586969; }
 .main-content code {
   padding: 2px 4px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -243,3 +243,26 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+/* custom part */
+
+.setting_button {
+  position: absolute;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+.setting_button:hover {
+  cursor: pointer;
+}
+
+.spinEffect{
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
