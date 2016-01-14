@@ -246,6 +246,42 @@ a {
 
 /* custom part */
 
+.page-header:after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 19px;
+  position: fixed;
+  z-index: 99;
+  bottom: 24px;
+  left: 50%;
+  margin-left: -32px;
+  background: transparent url("../images/arrow.svg") no-repeat center bottom;
+  background-size: contain;
+  -webkit-animation: arrow 1s ease-in-out infinite alternate;
+          animation: arrow 1s ease-in-out infinite alternate; }
+
+
+@-webkit-keyframes arrow {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+@keyframes arrow {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+
 .setting_button {
   position: absolute;
   top: 20px;
