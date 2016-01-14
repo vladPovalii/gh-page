@@ -261,6 +261,9 @@ a {
   -webkit-animation: arrow 1s ease-in-out infinite alternate;
           animation: arrow 1s ease-in-out infinite alternate; }
 
+.page-header.no-after:after{
+  content: none;
+}
 
 @-webkit-keyframes arrow {
   from {

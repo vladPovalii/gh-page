@@ -6,9 +6,14 @@ $(function () {
 
   // init scroll magic
   var controller = new ScrollMagic.Controller();
+ 
+});
 
-  var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
-          // trigger a velocity opaticy animation
-          .setVelocity(".page-header:after", {opacity: 0}, {duration: 100})
-          .addTo(controller);  
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+    	$('.page-header').addClass('no-after');
+
+   }else{
+    	$('.page-header').removeClass('no-after');
+   }
 });
