@@ -56,7 +56,8 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-image: linear-gradient(120deg, rgb(3, 28, 58), rgb(3, 24, 49)); }
+  opacity: 0.8;
+  background: linear-gradient(120deg, rgb(3, 28, 58), rgb(3, 24, 49)); }
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -245,6 +246,16 @@ a {
     font-size: 0.9rem; } }
 
 /* custom part */
+#space {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 3s;
+  transition: opacity ease-in-out 3s; }
+  #space.loaded {
+    opacity: 1; }
 
 .page-header:after {
   content: "";
