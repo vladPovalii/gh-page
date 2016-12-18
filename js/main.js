@@ -1,17 +1,19 @@
 /* global $, ScrollMagic*/
 'use strict';
-
-
+/**
+ * This script demonstrates how to sign the user in and how to sign it out.
+ */
 $(function () {
-
-  // init scroll magic
-  var controller = new ScrollMagic.Controller();
  
+  //init scroll magic
+  var controller = new ScrollMagic.Controller();
+
 });
 
 /* this part of code was taken from project - https://github.com/algolia/instantsearch.js
  * gh-pages branch, and creating a buautiful space animation via three.js
  */
+
 document.addEventListener('DOMContentLoaded', function(){
   var threeScript = document.createElement('script');
   threeScript.src = 'js/three.min.js';
@@ -109,3 +111,4 @@ $(window).scroll(function() {
     	$('.page-header').removeClass('no-after');
    }
 });
+
